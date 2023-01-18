@@ -6,3 +6,5 @@ The file get_nba_players.py iterates through all NBA teams and returns each play
 The file get_player_assetId.py returns a player's assetId, which can be used in the main Sorare API that gives more data such as auction history.
 
 The file get_last_price.py returns the latest sale price using a player's assetId. It currently does not work without an API Key.
+
+3 above queries are derived from resources within https://github.com/sorare/api
