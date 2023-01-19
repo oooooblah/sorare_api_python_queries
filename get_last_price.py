@@ -9,13 +9,17 @@ from pyparsing import null_debug_action
 
 player_assetId = "0x04000834edfe8c67ce6c8e1eae7526f7049c9f743e40b1e3b8014735a767e9e8"
 
+#uncomment below variable "api_key" and put your api key in the string, then uncomment the "headers" variable in transport variable in async def main
+
+# api_key = ""
 
 async def main():
 
 
     transport = AIOHTTPTransport(
         url="https://api.sorare.com/graphql",
-        # headers = {"Authorization": "Bearer <TheUserAccessToken>"}
+        
+        # headers = {"APIKEY": api_key}
     )
 
     async with Client(transport=transport) as session:
